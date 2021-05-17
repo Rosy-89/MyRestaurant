@@ -13,6 +13,10 @@
 		E165257F2652AB6400E24919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E165257D2652AB6400E24919 /* Main.storyboard */; };
 		E16525812652AB6500E24919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16525802652AB6500E24919 /* Assets.xcassets */; };
 		E16525842652AB6500E24919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16525822652AB6500E24919 /* LaunchScreen.storyboard */; };
+		E165258C2652B20900E24919 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165258B2652B20900E24919 /* NetworkService.swift */; };
+		E165258E2652B4BE00E24919 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165258D2652B4BE00E24919 /* URLSessionExtension.swift */; };
+		E16525912652B7E500E24919 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16525902652B7E500E24919 /* NetworkError.swift */; };
+		E16525932652B92F00E24919 /* NetworkURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16525922652B92F00E24919 /* NetworkURLs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E16525802652AB6500E24919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E16525832652AB6500E24919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E16525852652AB6500E24919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E165258B2652B20900E24919 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E165258D2652B4BE00E24919 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		E16525902652B7E500E24919 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E16525922652B92F00E24919 /* NetworkURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +71,20 @@
 				E16525802652AB6500E24919 /* Assets.xcassets */,
 				E16525822652AB6500E24919 /* LaunchScreen.storyboard */,
 				E16525852652AB6500E24919 /* Info.plist */,
+				E165258F2652B5CB00E24919 /* Service */,
 			);
 			path = MyRestaurant;
+			sourceTree = "<group>";
+		};
+		E165258F2652B5CB00E24919 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E165258B2652B20900E24919 /* NetworkService.swift */,
+				E165258D2652B4BE00E24919 /* URLSessionExtension.swift */,
+				E16525902652B7E500E24919 /* NetworkError.swift */,
+				E16525922652B92F00E24919 /* NetworkURLs.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E165258E2652B4BE00E24919 /* URLSessionExtension.swift in Sources */,
 				E165257C2652AB6400E24919 /* ViewController.swift in Sources */,
 				E16525782652AB6400E24919 /* AppDelegate.swift in Sources */,
+				E16525912652B7E500E24919 /* NetworkError.swift in Sources */,
+				E16525932652B92F00E24919 /* NetworkURLs.swift in Sources */,
+				E165258C2652B20900E24919 /* NetworkService.swift in Sources */,
 				E165257A2652AB6400E24919 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
